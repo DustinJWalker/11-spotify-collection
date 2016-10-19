@@ -7,10 +7,12 @@ import SpotifyTrack from  './track-view';
 // loop
 const results = document.querySelector('results');
 
-data.tracks.items.forEach((item) => {
+data.track.items.forEach((item) => {
   const t = new Model(item);
 
   const view = new SpotifyTrack(t);
 
-  document.body.appendChild(view);
+  view.render();
+
+  results.appendChild(view.data);
 });
