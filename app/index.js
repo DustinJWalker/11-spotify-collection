@@ -5,7 +5,7 @@ import Model from './track-model';
 import SpotifyTrack from  './track-view';
 
 // loop
-const results = document.querySelector('.results');
+const results = document.querySelector('results');
 
 data.tracks.items.forEach((item) => {
   const t = new Model(item);
