@@ -3,6 +3,7 @@
 
 export default class SpotifyTrack {
   constructor(data) {
+    this.data = data;
     const container = document.createElement('div');
     container.classList.add('track');
     container.classList.add('panel-block');
