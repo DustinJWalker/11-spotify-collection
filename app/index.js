@@ -1,12 +1,12 @@
 import 'whatwg-fetch';
 
 import data from './data.json';
-import Model from './track-model';
-import SpotifyTrack from './track-view';
+import TrackModel from './spotify-tracker/track-model';
+import SpotifyTrack from './spotify-tracker/track-view';
 
 
-data.track.items.forEach((item) => {
-  const t = new Model(item);
+data.tracks.items.forEach((item) => {
+  const t = new TrackModel(item);
 
   const view = new SpotifyTrack(t);
 

@@ -35,4 +35,4 @@ export default class SpotifyTrack {
     this.data.querySelector('.track__img').innerText = this.data.image;
     this.data.querySelector('.track__link').innerText = this.data.url;
   }
-  }
+}
