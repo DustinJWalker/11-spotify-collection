@@ -4,10 +4,10 @@
 export default class SpotifyTrack {
   constructor(data) {
     this.data = data;
-    this.el = document.createElement('div');
-    this.el.classList.add('track');
-    this.el.classList.add('panel-block');
-    this.el.innerHTML = `
+    this.track = document.createElement('div');
+    this.track.classList.add('track');
+    this.track.classList.add('panel-block');
+    this.track.innerHTML = `
     <div class="content">
       <div class="content-left">
         <div class="track__frame">
@@ -27,12 +27,12 @@ export default class SpotifyTrack {
       </div>
     </div>`;
 
-    this.render();
+    // this.render();
   }
-  render()  {
-    this.data.querySelector('.track__artist').innerText = this.data.artist;
-    this.data.querySelector('.track__name').innerText = this.data.name;
-    this.data.querySelector('.track__img').innerText = this.data.image;
-    this.data.querySelector('.track__link').innerText = this.data.url;
+  render() {
+    this.track.querySelector('.track__artist').innerText = this.data.artist;
+    this.track.querySelector('.track__name').innerText = this.data.name;
+    this.track.querySelector('.track__img').innerText = this.data.image;
+    this.track.querySelector('.track__link').innerText = this.data.url;
   }
 }
