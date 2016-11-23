@@ -10,7 +10,7 @@ data.tracks.items.forEach((item) => {
   const view = new SpotifyTrack(t);
 
 
-  const results = document.querySelector('results');
-  results.appendChild(view.tracks);
+  const results = document.querySelector('.results');
+  results.appendChild(view.track);
   view.render();
 });
