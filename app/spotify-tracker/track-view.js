@@ -22,7 +22,7 @@ export default class SpotifyTrack {
       <div class="content-right">
         <div class="track__url">
           <a class="track__link">
-            <span class="fa fa-spotify fa-3x"</span>
+            <span class="fa fa-spotify fa-3x"></span>
           </a>
         </div>
       </div>
