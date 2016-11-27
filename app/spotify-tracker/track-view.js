@@ -34,6 +34,6 @@ export default class SpotifyTrack {
     this.track.querySelector('.track__artist').innerText = this.data.artist;
     this.track.querySelector('.track__name').innerText = this.data.name;
     this.track.querySelector('.track__img').src = this.data.image;
-    this.track.querySelector('.track__link').innerText = this.data.url;
+    this.track.querySelector('.track__link').href = this.data.url;
   }
 }

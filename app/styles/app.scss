@@ -21,7 +21,6 @@ $white: hsl(0, 0%, 21%);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  color: $white;
 }
 
 .panel {
@@ -63,4 +62,5 @@ $white: hsl(0, 0%, 21%);
 
 .content {
   display: flex;
+  justify-content: space-between;
 }
