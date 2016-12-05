@@ -19,7 +19,6 @@ $white: hsl(0, 0%, 21%);
 .page {
   height: 100vh;
   overflow: hidden;
-
   display: flex;
   flex-direction: column;
 }
@@ -59,4 +58,8 @@ $white: hsl(0, 0%, 21%);
 
     color: #fff;
   }
+}
+
+.content {
+  display: flex;
 }
